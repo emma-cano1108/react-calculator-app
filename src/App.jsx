@@ -5,15 +5,15 @@ function App() {
 
 
   return (
-    <div className='container'>
+    
 
     
-      <section className='calc'>
+
         <Calc/>
-      </section>
+
     
       
-    </div>
+
   )
 }
 
