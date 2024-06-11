@@ -24,7 +24,12 @@ function Calc() {
 
 
   const handleEqual = () => {
-    let result = String(eval(screen));
+    let result = "";
+    if(screen != ""){
+       result = String(eval(screen));
+    } else {result = ""}
+    
+    
     if(isNaN(result) || result == "Infinity"){
       setScreen("ERROR")
     } else {setScreen(result)}
@@ -160,13 +165,6 @@ function Calc() {
           }}
         >
           <Button icon={"+"} />
-        </section>
-        <section
-          onClick={() => {
-            handleClick("00");
-          }}
-        >
-          <Button icon={"00"} />
         </section>
         <section
           onClick={() => {
