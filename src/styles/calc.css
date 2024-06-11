@@ -1,6 +1,7 @@
 .calculator {
   background-color: #394550;
   color: white;
+  min-width: 330px;
   width: 30vw;
   display: grid;
   grid-template-columns: repeat(4, minmax(60px, 1fr));
